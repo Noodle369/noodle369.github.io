@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 鹅鹅鹅</title>
+    <link>https://aiolearn.goosegrin.site/tags/</link>
+    <description>Recent content in Tags on 鹅鹅鹅</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Apr 2025 11:49:04 +0800</lastBuildDate>
+    <atom:link href="https://aiolearn.goosegrin.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Search Console</title>
+      <link>https://aiolearn.goosegrin.site/tags/google-search-console/</link>
+      <pubDate>Wed, 16 Apr 2025 11:49:04 +0800</pubDate>
+      <guid>https://aiolearn.goosegrin.site/tags/google-search-console/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SEO必备</title>
+      <link>https://aiolearn.goosegrin.site/tags/seo%E5%BF%85%E5%A4%87/</link>
+      <pubDate>Wed, 16 Apr 2025 11:49:04 +0800</pubDate>
+      <guid>https://aiolearn.goosegrin.site/tags/seo%E5%BF%85%E5%A4%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Goaccess</title>
+      <link>https://aiolearn.goosegrin.site/tags/goaccess/</link>
+      <pubDate>Tue, 15 Apr 2025 17:45:51 +0800</pubDate>
+      <guid>https://aiolearn.goosegrin.site/tags/goaccess/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
