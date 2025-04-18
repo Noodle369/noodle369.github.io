@@ -107,6 +107,7 @@
 
 <script  src="https://aiolearn.goosegrin.site/vendor/glightbox/js/glightbox.min.js"></script>
  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
   </head>
   <body>
     
@@ -261,9 +262,13 @@
 <p>访问 <a href="https://search.google.com"><strong>Google Search Console</strong></a>，然后登录你的Google账号。</p>
 <h2 id="添加网站">添加网站</h2>
 <p>点击<strong>左上角</strong>的按钮，下拉点击<strong>添加资源</strong>。</p>
-<p><img src="/imgs/submit-to-google-search-console/image.webp" alt="image"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image.webp" alt="image" class="lazyload" />
+
+</p>
 <p>然后会弹出2个选择，这里要根据你网址类型进行选择，我做过简单的介绍</p>
-<p><img src="/imgs/submit-to-google-search-console/image-1.webp" alt="image-1"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-1.webp" alt="image-1" class="lazyload" />
+
+</p>
 <h3 id="网域">网域：</h3>
 <ul>
 <li>如果你只添加<strong>example.com</strong>，那么就选择网域，这样<strong>example.com</strong>下域名的所有可能的格式都会包含，通常用于管理整个站点，比如：<strong>example.com、www.example.com、blog.example.com</strong>，同时也包域名下的所有数据。网域只支持DNS验证，必须到你域名的注册商下添加一条TXT解析地址。</li>
@@ -338,41 +343,59 @@
 <ol>
 <li>输入你的域名，点击继续</li>
 </ol>
-<p><img src="/imgs/submit-to-google-search-console/image-2.webp" alt="image-2"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-2.webp" alt="image-2" class="lazyload" />
+
+</p>
 <ol start="2">
 <li>弹出一个会话框让我们选择，只关注我红框标出的，点击<strong>复制</strong>，然后登录你购买域名的地方，我的是<a href="https://www.cloudflare.com"><strong>Cloudflare</strong></a>，浏览器打开Cloudflare的网站，使用Google登录，前提域名已经绑定到Cloudflare，没有可以绑定，因为以后会用到Cloudflare CDN加速你的网站，提高网站的响应速度。</li>
 </ol>
-<p><img src="/imgs/submit-to-google-search-console/image-5.webp" alt="image-5"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-5.webp" alt="image-5" class="lazyload" />
+
+</p>
 <ol start="3">
 <li>点击<strong>DNS</strong>，点击<strong>添加记录</strong>，填入我们刚才复制的代码，最后点击保存</li>
 </ol>
-<p><img src="/imgs/submit-to-google-search-console/image-3.webp" alt="image-3"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-3.webp" alt="image-3" class="lazyload" />
+
+</p>
 <ul>
 <li>类型：TXT</li>
 <li>名称： @。如果你添加的是<strong>blog.example.com</strong>，这里可以添加<strong>blog</strong></li>
 <li>TTL：自动</li>
 <li>内容：刚才复制的代码</li>
 </ul>
-<p><img src="/imgs/submit-to-google-search-console/image-7.webp" alt="image-7"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-7.webp" alt="image-7" class="lazyload" />
+
+</p>
 <ol start="4">
 <li>添加完成后，就可以在GSC后台点击<strong>验证</strong>就行，可能需要几分钟到1个小时，我们耐心等待。</li>
 </ol>
-<p><img src="/imgs/submit-to-google-search-console/image-6.webp" alt="image-6"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-6.webp" alt="image-6" class="lazyload" />
+
+</p>
 <h2 id="url前缀验证方法">URL前缀验证方法</h2>
 <p>使用URL前缀验证的话，就只能选择HTML验证，它要求在你的网站根目录下添加一个**.html<strong>的文件，这里我们已https://blog.example.com为例，必须带https://前缀，点击</strong>继续**</p>
-<p><img src="/imgs/submit-to-google-search-console/image-8.webp" alt="image-8"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-8.webp" alt="image-8" class="lazyload" />
+
+</p>
 <h3 id="步骤">步骤</h3>
 <ol>
 <li>下载html文件</li>
 <li>将下载好的文件上传到网站根目录，这边可以交给服务商或网站维护人员操作</li>
 <li>上传完成后，点击验证。基本上立刻就能验证超过</li>
 </ol>
-<p><img src="/imgs/submit-to-google-search-console/image-9.webp" alt="image-8"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-9.webp" alt="image-8" class="lazyload" />
+
+</p>
 <h2 id="最后">最后</h2>
 <p>验证成功后，我们可以将站点地图添加到GSC后台。</p>
 <p>点击<strong>站点地图</strong>，填入站点地图的链接，一般是 <strong><a href="https://xxx.com/sitemap.xml">https://xxx.com/sitemap.xml</a></strong>，这里GSC已经帮我们预设好域名，我们填入<strong>sitemap.xml</strong>就行，最后点击<strong>验证</strong>，看到<strong>状态</strong>是<strong>成功</strong>就可以了，等待几天GSC就会展示你的数据</p>
-<p><img src="/imgs/submit-to-google-search-console/image-10.webp" alt="image-10"></p>
-<p><img src="/imgs/submit-to-google-search-console/image-11.webp" alt="image-11"></p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-10.webp" alt="image-10" class="lazyload" />
+
+</p>
+<p><img data-src="/imgs/submit-to-google-search-console/image-11.webp" alt="image-11" class="lazyload" />
+
+</p>
 
       </article>
     </div>
