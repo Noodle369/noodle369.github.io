@@ -1,1 +1,10 @@
 User-agent: *
+Disallow: /tags/*.xml
+Disallow: /global-trade-toolbox/*.xml
+Disallow: /social-media/*.xml
+Disallow: /categories/*.xml
+Disallow: /tools/*.xml
+Disallow: /website-building/*.xml
+
+
+Sitemap: https://aiolearn.goosegrin.site/sitemap.xml
