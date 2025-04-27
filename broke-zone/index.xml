@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Broke-Zones on 鹅鹅鹅</title>
-    <link>https://aiolearn.goosegrin.site/broke-zone/</link>
+    <link>http://localhost:1313/broke-zone/</link>
     <description>Recent content in Broke-Zones on 鹅鹅鹅</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 26 Apr 2025 16:09:48 +0800</lastBuildDate>
-    <atom:link href="https://aiolearn.goosegrin.site/broke-zone/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/broke-zone/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[穷鬼专区] - 有哪些可以白嫖的网站托管平台</title>
-      <link>https://aiolearn.goosegrin.site/broke-zone/where-to-host-websites-for-free/</link>
+      <link>http://localhost:1313/broke-zone/where-to-host-websites-for-free/</link>
       <pubDate>Sat, 26 Apr 2025 16:09:48 +0800</pubDate>
-      <guid>https://aiolearn.goosegrin.site/broke-zone/where-to-host-websites-for-free/</guid>
+      <guid>http://localhost:1313/broke-zone/where-to-host-websites-for-free/</guid>
       <description>&lt;p&gt;使用这些托管平台的前提是你&lt;strong&gt;懂一些代码&lt;/strong&gt;，同时网站是&lt;strong&gt;纯静态的HTML+CSS网站&lt;/strong&gt;，比如：Wordpress就不支持。但是网络上有很多开源的博客系统，比如：Hugo、Hexo等，本网站就是使用Hugo搭建，这些博客系统都有丰富免费主题可以选择，不用动太多代码也可以上手。&lt;/p&gt;&#xA;&lt;p&gt;如果你懂代码的话，大鹅推荐你使用Next.js来建站，Next完美支持SEO，免费开源，支持服务端渲染，这样用户请求结果都是静态文件，比Wordpress速度上有优势，可以在服务器配置很弱的环境下运行，这点Wordpress就不能做到了，虽然Wordpress拥有更高的自定义化和数量庞大的插件市场，但是太多的插件又限制了网站的速度。&lt;/p&gt;&#xA;&lt;h2 id=&#34;推荐选择&#34;&gt;&lt;strong&gt;推荐选择&lt;/strong&gt;​&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;个人博客/文档​​&lt;/strong&gt; → GitHub Pages / GitLab Pages&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;​前端项目(React/Vue)​​&lt;/strong&gt; → Netlify / Vercel&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;​​Next.js 项目&lt;/strong&gt;​​ → Vercel&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;​​高流量静态网站​&lt;/strong&gt;​ → Cloudflare Pages&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;​​全栈应用&lt;/strong&gt;​​ → Render&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;1-github-pages&#34;&gt;&lt;strong&gt;1. Github Pages&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;由 GitHub 提供的免费静态网站托管服务。&lt;/p&gt;</description>
     </item>
   </channel>

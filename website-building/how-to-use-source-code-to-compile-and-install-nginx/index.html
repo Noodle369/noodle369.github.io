@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>如何使用源码编译安装NGINX - 鹅鹅鹅</title>
+<meta name="description" content="5分钟编译属于自己的Nginx">
+
+<meta name="author" content="大鹅"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "鹅鹅鹅",
+    
+    "url": "http:\/\/localhost:1313\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "http:\/\/localhost:1313\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/website-building\/how-to-use-source-code-to-compile-and-install-nginx\/",
+          "name": "如何使用源码编译安装 nginx"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "map[name:大鹅]"
+  },
+  "headline": "如何使用源码编译安装NGINX",
+  "description" : "5分钟编译属于自己的Nginx",
+  "inLanguage" : "zh-cn",
+  "wordCount":  418 ,
+  "datePublished" : "2025-04-27T12:33:53",
+  "dateModified" : "2025-04-27T12:33:53",
+  "image" : "http:\/\/localhost:1313\/",
+  "keywords" : [ "Nginx" ],
+  "mainEntityOfPage" : "http:\/\/localhost:1313\/website-building\/how-to-use-source-code-to-compile-and-install-nginx\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "http:\/\/localhost:1313\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "http:\/\/localhost:1313\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="如何使用源码编译安装NGINX" />
+<meta property="og:description" content="5分钟编译属于自己的Nginx">
+<meta property="og:image" content="http://localhost:1313/cover/How-to-use-source-code-to-compile-and-install-NGINX-cover.webp" />
+<meta property="og:url" content="http://localhost:1313/website-building/how-to-use-source-code-to-compile-and-install-nginx/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="鹅鹅鹅" />
+<link rel="apple-touch-icon" sizes="180x180" href=" http://localhost:1313/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon/favicon-16x16.png">
+
+
+<meta name="generator" content="Hugo 0.145.0">
+<link rel="alternate" href="http://localhost:1313/index.xml" type="application/rss+xml" title="鹅鹅鹅">
+
+
+<link rel="stylesheet" href="/style.min.css">
+
+
+
+
+
+
+
+ 
+
+<link href="/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+
+<script  src="http://localhost:1313/vendor/glightbox/js/glightbox.min.js"></script>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+  </head>
+  <body>
+    
+<div class="container fixed-top mw-100">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
+        <div class="container">
+
+          <a class="navbar-brand fw-bold" href="http://localhost:1313/">鹅鹅鹅</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-baseline">
+              
+              
+
+              <li class="nav-item">
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="独立站"
+                  href="/website-building/"> 独立站</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="社交媒体"
+                  href="/social-media/"> 社交媒体</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="百宝箱"
+                  href="/global-trade-toolbox/"> 百宝箱</a>
+              </li>
+
+              
+              
+              
+
+              <li class="nav-item">
+                
+                
+                
+                
+                
+
+                <a class="nav-link " title="穷鬼专区"
+                  href="/broke-zone/"> 穷鬼专区</a>
+              </li>
+
+              
+              
+
+
+                
+            
+
+            
+               
+
+              
+              
+            </ul>
+
+            
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</div>
+    
+
+
+
+
+
+
+
+
+
+<header class="header-section ">
+
+  <div class="intro-header no-img mt-10">
+    <div class="container">
+      <div class="row justify-content-center">
+        
+
+          
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            
+
+            <div class="website-building-heading">
+              
+
+              
+
+              
+              <h1 class="fw-semibold display-5 lh-1 mb-3"> 
+                如何使用源码编译安装NGINX
+                
+              </h1>
+              
+              
+
+              
+
+              
+              
+              
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    </div>
+  </div>
+</header>
+
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+
+    
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      <article role="main" class="blog-post">
+        <h2 id="安装所需的依赖环境"><strong>安装所需的依赖环境</strong></h2>
+<p>在编译前，我们需要安装编译所需的工具，使用下面命令</p>
+<pre tabindex="0"><code>sudo apt update # 更新
+sudo apt install wget tar make gcc build-essential libpcre3-dev zlib1g-dev libssl-dev
+</code></pre><h2 id="下载源码"><strong>下载源码</strong></h2>
+<p>通过编译安装Nginx的好处是可以添加一些模块，定制内容。</p>
+<ol>
+<li>
+<p>在<a href="https://nginx.org/en/download.html">Nginx</a>官网下载安装包，建议下载稳定版本(Stable version)，下载完成后，通过FTP将安装包上传到服务器
+<img data-src="/imgs/How-to-use-source-code-to-compile-and-install-NGINX/nginx-download-page.webp" alt="nginx-downlaod-page" class="lazyload" />
+
+
+</p>
+</li>
+<li>
+<p>通过wget命令安装，以<code>nginx-1.28.0</code>为例</p>
+</li>
+</ol>
+<pre tabindex="0"><code>wget -c https://nginx.org/download/nginx-1.28.0.tar.gz 
+</code></pre><h2 id="解压"><strong>解压</strong></h2>
+<p>通过tar工具将其解压，然后进入解压后的源码文件夹</p>
+<pre tabindex="0"><code>tar -xzvf nginx-1.28.0.tar.gz # 解压
+cd nginx-1.28.0 # 进入Nginx源码目录
+</code></pre><h2 id="编译"><strong>编译</strong></h2>
+<ol>
+<li>创建www-data用户，如果用户存在的话会提示<code>useradd: user 'www-data' already exists</code></li>
+</ol>
+<pre tabindex="0"><code>sudo useradd -s /sbin/nologin www-data -M
+</code></pre><ol start="2">
+<li>预编译配置</li>
+</ol>
+<ul>
+<li><code>--prefix=/usr/local/nginx/</code>​ -&gt; 指定 Nginx 的安装目录，通常是 /usr/local/nginx</li>
+<li><code>--user=www-data --group=www-data​</code> -&gt; 设置 Nginx 工作进程（Worker Processes）的运行用户和用户组，www-data 是Ubuntu/Debian默认的 Web 服务用户（Apache/Nginx 都使用它）。</li>
+<li><strong>注意</strong>：避免直接以 root 身份运行 Web 服务，因为服务器可能有漏洞，如果不法分子获取到了web访问的权限，通过root用户，就能控制整台电脑。</li>
+<li><code>--with-http_stub_status_module​</code> -&gt; 启用 Nginx 的 ​​状态监控模块，通过访问 http://你的服务器/nginx_status 可以查看 Nginx 的实时状态信息</li>
+</ul>
+<pre tabindex="0"><code>./configure --prefix=/usr/local/nginx/ --user=www-data --group=www-data --with-http-stub-module
+</code></pre><ol start="3">
+<li>编译</li>
+</ol>
+<pre tabindex="0"><code>sudo make -j4
+</code></pre><h2 id="安装"><strong>安装</strong></h2>
+<ol>
+<li>如果你前面的编译没有出错的话，最后就可以安装了</li>
+</ol>
+<pre tabindex="0"><code>sudo -j4 install
+</code></pre><ol start="2">
+<li>查看Nginx是否安装成功</li>
+</ol>
+<pre tabindex="0"><code>ls -l /usr/local/nginx/
+</code></pre><h2 id="启动nginx"><strong>启动Nginx</strong></h2>
+<pre tabindex="0"><code>sudo /usr/local/nginx/sbin/nginx
+# sudo /usr/local/nginx/sbin/nginx -s stop  # 停止 Nginx 命令
+</code></pre><p>这一步我们还是无法在外网访问nginx，需要开启防火墙，我们使用ufw来开启80端口，没有的话可以通过<code>sudo apt install ufw</code>安装</p>
+<pre tabindex="0"><code>sudo ufw allow 80 # 开放防火墙80端口
+</code></pre><p>最后我们就可以通过<code>http://localhost</code>访问nginx，当看到这个页面，就说明成功了</p>
+<p><img data-src="/imgs/How-to-use-source-code-to-compile-and-install-NGINX/nginx-welcome-page.webp" alt="nginx-welcome-page" class="lazyload" />
+
+
+</p>
+<h2 id="创建systemctl服务"><strong>创建SystemCtl服务</strong></h2>
+<p>每次启动停止都得输入<code>sudo /usr/local/nginx/sbin/nginx</code>很不方便，我们可以通systemctl控制，使用<code>systemctl start/stop/reload nginx</code>就可以启动、关闭、重启nginx</p>
+<ol>
+<li>安装systemctl</li>
+</ol>
+<pre tabindex="0"><code>sudo apt update
+sudo apt install systemctl
+</code></pre><ol start="2">
+<li>创建 nginx.service 文件</li>
+</ol>
+<pre tabindex="0"><code>sudo vim /etc/systemd/system/nginx.service
+</code></pre><ol start="3">
+<li>写入以下内容​​（根据你的安装路径调整）</li>
+</ol>
+<pre tabindex="0"><code>[Unit]
+Description=The Nginx HTTP and reverse proxy server
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/usr/local/nginx/logs/nginx.pid
+ExecStart=/usr/local/nginx/sbin/nginx
+ExecReload=/usr/local/nginx/sbin/nginx -s reload
+ExecStop=/usr/local/nginx/sbin/nginx -s quit
+PrivateTmp=true
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target
+</code></pre><ul>
+<li><strong>PIDFile​</strong>​：Nginx 的 PID 文件路径（如果 nginx.conf 里没指定，默认在 logs/nginx.pid）。</li>
+<li><strong>User/Group</strong>​​：运行 Nginx 的用户（编译时指定的 &ndash;user=www-data &ndash;group=www-data）。</li>
+<li><strong>ExecStart/ExecStop</strong>​​：启动和停止命令。</li>
+</ul>
+<ol start="4">
+<li>重新加载 Systemd 并启动 Nginx</li>
+</ol>
+<pre tabindex="0"><code>sudo systemctl daemon-reload       # 重新加载服务配置
+sudo systemctl start nginx         # 启动 Nginx
+sudo systemctl enable nginx       # 设置开机自启
+</code></pre><ol start="5">
+<li>检查状态</li>
+</ol>
+<pre tabindex="0"><code>sudo systemctl status nginx
+</code></pre><h2 id="nginx模块介绍"><strong>Nginx模块介绍</strong></h2>
+<p>前面在编译设置命令<code>./configure --prefix=/usr/local/nginx/ --user=www-data --group=www-data --with-http-stub-module</code>，有个-with-http-stub-module，这是Nginx的模块，这也是我们为什么选择编译安装的原因，可以编译我们想要的官方模块和第三方模块。</p>
+<p>下面我会介绍官方和第三方每个模块的作用</p>
+<h3 id="官方核心模块默认启用无需额外配置"><strong>官方核心模块（默认启用，无需额外配置）​</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>模块名</th>
+          <th>作用</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>http_core_module</td>
+          <td>提供 HTTP 服务核心功能（必选）</td>
+      </tr>
+      <tr>
+          <td>http_access_module</td>
+          <td>基于 IP 的访问控制（allow/deny）</td>
+      </tr>
+      <tr>
+          <td>http_auth_basic_module</td>
+          <td>基础认证（用户名/密码保护）</td>
+      </tr>
+      <tr>
+          <td>http_gzip_module</td>
+          <td>Gzip 压缩响应</td>
+      </tr>
+      <tr>
+          <td>http_proxy_module</td>
+          <td>反向代理支持</td>
+      </tr>
+      <tr>
+          <td>http_rewrite_module</td>
+          <td>URL 重写（rewrite 指令）</td>
+      </tr>
+      <tr>
+          <td>http_ssl_module</td>
+          <td>HTTPS/SSL 加密支持</td>
+      </tr>
+      <tr>
+          <td>http_log_module</td>
+          <td>访问日志功能</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="官方可选模块需手动启用使用"><strong>官方可选模块（需手动启用，使用<code>--with...</code>添加）​</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>模块名</th>
+          <th>作用</th>
+          <th>启用参数</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>http_stub_status_module</td>
+          <td>Nginx 状态监控页面</td>
+          <td>&ndash;with-http_stub_status_module</td>
+      </tr>
+      <tr>
+          <td>http_realip_module</td>
+          <td>获取客户端真实 IP（用于反向代理）</td>
+          <td>&ndash;with-http_realip_module</td>
+      </tr>
+      <tr>
+          <td>http_addition_module</td>
+          <td>在响应前后添加内容</td>
+          <td>&ndash;with-http_addition_module</td>
+      </tr>
+      <tr>
+          <td>http_sub_module</td>
+          <td>替换响应内容</td>
+          <td>&ndash;with-http_sub_module</td>
+      </tr>
+      <tr>
+          <td>http_dav_module</td>
+          <td>WebDAV 支持（文件管理）</td>
+          <td>&ndash;with-http_dav_module</td>
+      </tr>
+      <tr>
+          <td>http_flv_module</td>
+          <td>FLV 视频流支持</td>
+          <td>&ndash;with-http_flv_module</td>
+      </tr>
+      <tr>
+          <td>http_mp4_module</td>
+          <td>MP4 视频流支持</td>
+          <td>&ndash;with-http_mp4_module</td>
+      </tr>
+      <tr>
+          <td>http_geoip_module</td>
+          <td>根据 IP 地理信息过滤</td>
+          <td>&ndash;with-http_geoip_module（需安装 libgeoip-dev）</td>
+      </tr>
+      <tr>
+          <td>http_perl_module</td>
+          <td>嵌入 Perl 脚本</td>
+          <td>&ndash;with-http_perl_module</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>示例</li>
+</ul>
+<pre tabindex="0"><code>./configure \
+    --with-http_stub_status_module \
+    --with-http_ssl_module \
+    --with-http_realip_module
+</code></pre><h3 id="第三方模块需要编译安装nginx"><strong>第三方模块（需要编译安装Nginx）</strong></h3>
+<table>
+  <thead>
+      <tr>
+          <th>模块名</th>
+          <th>作用</th>
+          <th>集成方式</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ngx_http_headers_more</td>
+          <td>更灵活的 HTTP 头控制</td>
+          <td>&ndash;add-module=/path/to/headers-more-nginx-module</td>
+      </tr>
+      <tr>
+          <td>ngx_brotli</td>
+          <td>Brotli 压缩（比 Gzip 更高效）</td>
+          <td>&ndash;add-module=/path/to/ngx_brotli</td>
+      </tr>
+      <tr>
+          <td>ngx_cache_purge</td>
+          <td>缓存清理（用于 FastCGI/Proxy）</td>
+          <td>&ndash;add-module=/path/to/ngx_cache_purge</td>
+      </tr>
+      <tr>
+          <td>ngx_lua</td>
+          <td>Lua 脚本支持（OpenResty 基础）</td>
+          <td>&ndash;add-module=/path/to/lua-nginx-module</td>
+      </tr>
+      <tr>
+          <td>ngx_http_echo</td>
+          <td>调试和动态响应生成</td>
+          <td>&ndash;add-module=/path/to/echo-nginx-module</td>
+      </tr>
+      <tr>
+          <td>ngx_http_auth_pam</td>
+          <td>PAM 认证支持</td>
+          <td>&ndash;add-module=/path/to/nginx-auth-pam</td>
+      </tr>
+  </tbody>
+</table>
+<ol>
+<li>安装示例</li>
+</ol>
+<pre tabindex="0"><code>git clone https://github.com/openresty/headers-more-nginx-module.git
+</code></pre><ol start="2">
+<li>编译时通过 &ndash;add-module 指定路径</li>
+</ol>
+<pre tabindex="0"><code>./configure \
+    --add-module=/path/to/headers-more-nginx-module \
+    --with-http_ssl_module
+</code></pre><ol start="3">
+<li>编译并安装</li>
+</ol>
+<pre tabindex="0"><code>make &amp;&amp; sudo make install
+</code></pre><h2 id="动态模块nginx-1911-支持"><strong>动态模块（Nginx 1.9.11+ 支持）​</strong></h2>
+<p>Nginx 1.9.11 后支持动态加载模块（<code>无需重新编译</code>）</p>
+<pre tabindex="0"><code>./configure --modules-path=/usr/lib/nginx/modules --with-compat
+</code></pre><p>动态模块文件为 <code>.so</code> 格式，可通过 <code>load_module</code> 指令在nginx.conf配置文件中加载</p>
+<pre tabindex="0"><code>load_module modules/ngx_http_geoip_module.so;
+</code></pre><h3 id="1-nginx-官方提供了一些内置的动态模块可以在编译时启用"><strong>(1) Nginx 官方提供了一些内置的动态模块，可以在编译时启用</strong></h3>
+<pre tabindex="0"><code>./configure --with-http_geoip_module=dynamic \
+           --with-http_image_filter_module=dynamic \
+           --with-mail=dynamic \
+           --with-stream=dynamic
+</code></pre><h3 id="2-第三方动态模块"><strong>(2) 第三方动态模块</strong></h3>
+<ol>
+<li>下载源码</li>
+</ol>
+<ul>
+<li><code>​​ngx_http_geoip2_module</code>​​（IP 地理位置）</li>
+</ul>
+<pre tabindex="0"><code>git clone https://github.com/leev/ngx_http_geoip2_module.git
+</code></pre><ul>
+<li><code>​​nginx-rtmp-module</code>​​（流媒体支持）</li>
+</ul>
+<pre tabindex="0"><code>git clone https://github.com/arut/nginx-rtmp-module.git
+</code></pre><ul>
+<li><code>​​lua-nginx-module​</code>​（Lua 脚本支持）</li>
+</ul>
+<pre tabindex="0"><code>git clone https://github.com/openresty/lua-nginx-module.git
+</code></pre><ol start="2">
+<li>编译动态模块​​（使用 &ndash;add-dynamic-module），</li>
+</ol>
+<p><strong>注意</strong>：是进入nginx的源码编译，<code>--add-dynamic-module=</code>指的位置是动态模块源码的位置</p>
+<pre tabindex="0"><code>tar -xzf lua-nginx-module.tar.gz # 解压动态模块源码
+
+./configure --with-compat --add-dynamic-module/path/to/module
+
+make modules # 编译
+</code></pre><ol start="3">
+<li>复制 <code>.so</code> 文件</li>
+</ol>
+<pre tabindex="0"><code>cp objs/*.so /usr/local/nginx/modules/
+</code></pre><ol start="4">
+<li>加载模块​，在 <code>nginx.conf</code> 中添加：</li>
+</ol>
+<pre tabindex="0"><code>load_module modules/ngx_http_geoip2_module.so;
+</code></pre><h2 id="如何查看已安装的模块"><strong>如何查看已安装的模块？​</strong></h2>
+<pre tabindex="0"><code>nginx -V  # 查看编译参数和已启用的模块
+</code></pre><ul>
+<li>输出示例：<code>configure arguments: --with-http_ssl_module --with-http_stub_status_module </code></li>
+</ul>
+
+      </article>
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+      <hr class="m-0"/>
+    </div>
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
+      
+      <div class="blog-tags">
+        
+        <a href="http://localhost:1313/tags/nginx/">Nginx</a>
+        
+      </div>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+      
+    </div>
+
+    
+    
+    
+
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-1 pt-4">
+      
+      <ul class="list-group list-group-horizontal" style="flex-direction: row">
+        
+        <li class="list-group-item b-0 p-0">
+
+          <a type="button" class="btn btn-dark" role="button" href="http://localhost:1313/website-building/what-is-robot.txt-file/"
+            data-toggle="tooltip" data-placement="top" title="什么是Robots.txt">&larr;
+            前一篇</a>
+        </li>
+        
+
+
+        
+      </ul>
+      
+    </div>
+
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
+    </div>
+  </div>
+  
+</div>
+
+<div class="">
+  
+  
+  
+
+  
+  
+
+  
+
+</div>
+
+    
+
+
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul
+          class="list-inline list-group list-group-horizontal text-center footer-links d-flex justify-content-center flex-row">
+
+          
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="mx-2">
+                <i class="bi bi-rss"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p class="credits copyright text-muted">
+          
+          
+          大鹅
+          
+          
+        
+          &nbsp;&bull;&nbsp;&copy;
+          
+          2025 
+          
+          
+
+          
+          &nbsp;&bull;&nbsp;
+          <a href="http://localhost:1313/">鹅鹅鹅</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          
+          Powered by Hugo & Lightbi.  Made with ❤ by Bino
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="http://localhost:1313/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> 
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("pre.chroma").forEach(function (element) {
+    element.style.padding = "0";
+  });
+});
+ </script>
+
+    
+  </body>
+</html>
+

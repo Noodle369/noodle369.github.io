@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on 鹅鹅鹅</title>
+    <link>http://localhost:1313/tags/nginx/</link>
+    <description>Recent content in Nginx on 鹅鹅鹅</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 27 Apr 2025 12:33:53 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用源码编译安装NGINX</title>
+      <link>http://localhost:1313/website-building/how-to-use-source-code-to-compile-and-install-nginx/</link>
+      <pubDate>Sun, 27 Apr 2025 12:33:53 +0800</pubDate>
+      <guid>http://localhost:1313/website-building/how-to-use-source-code-to-compile-and-install-nginx/</guid>
+      <description>&lt;h2 id=&#34;安装所需的依赖环境&#34;&gt;&lt;strong&gt;安装所需的依赖环境&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;在编译前，我们需要安装编译所需的工具，使用下面命令&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update # 更新&#xD;&#xA;sudo apt install wget tar make gcc build-essential libpcre3-dev zlib1g-dev libssl-dev&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;下载源码&#34;&gt;&lt;strong&gt;下载源码&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;通过编译安装Nginx的好处是可以添加一些模块，定制内容。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;在&lt;a href=&#34;https://nginx.org/en/download.html&#34;&gt;Nginx&lt;/a&gt;官网下载安装包，建议下载稳定版本(Stable version)，下载完成后，通过FTP将安装包上传到服务器&#xA;&lt;img data-src=&#34;http://localhost:1313/imgs/How-to-use-source-code-to-compile-and-install-NGINX/nginx-download-page.webp&#34; alt=&#34;nginx-downlaod-page&#34; class=&#34;lazyload&#34; /&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
