@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>独立站资源 on 鹅鹅鹅</title>
-    <link>http://localhost:1313/website-building/</link>
+    <link>https://aiolearn.goosegrin.site/website-building/</link>
     <description>Recent content in 独立站资源 on 鹅鹅鹅</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 27 Apr 2025 12:33:53 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/website-building/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aiolearn.goosegrin.site/website-building/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何使用源码编译安装NGINX</title>
-      <link>http://localhost:1313/website-building/how-to-use-source-code-to-compile-and-install-nginx/</link>
+      <link>https://aiolearn.goosegrin.site/website-building/how-to-use-source-code-to-compile-and-install-nginx/</link>
       <pubDate>Sun, 27 Apr 2025 12:33:53 +0800</pubDate>
-      <guid>http://localhost:1313/website-building/how-to-use-source-code-to-compile-and-install-nginx/</guid>
-      <description>&lt;h2 id=&#34;安装所需的依赖环境&#34;&gt;&lt;strong&gt;安装所需的依赖环境&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;在编译前，我们需要安装编译所需的工具，使用下面命令&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update # 更新&#xD;&#xA;sudo apt install wget tar make gcc build-essential libpcre3-dev zlib1g-dev libssl-dev&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;下载源码&#34;&gt;&lt;strong&gt;下载源码&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;通过编译安装Nginx的好处是可以添加一些模块，定制内容。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;在&lt;a href=&#34;https://nginx.org/en/download.html&#34;&gt;Nginx&lt;/a&gt;官网下载安装包，建议下载稳定版本(Stable version)，下载完成后，通过FTP将安装包上传到服务器&#xA;&lt;img data-src=&#34;http://localhost:1313/imgs/How-to-use-source-code-to-compile-and-install-NGINX/nginx-download-page.webp&#34; alt=&#34;nginx-downlaod-page&#34; class=&#34;lazyload&#34; /&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
+      <guid>https://aiolearn.goosegrin.site/website-building/how-to-use-source-code-to-compile-and-install-nginx/</guid>
+      <description>&lt;h2 id=&#34;安装所需的依赖环境&#34;&gt;&lt;strong&gt;安装所需的依赖环境&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;在编译前，我们需要安装编译所需的工具，使用下面命令&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update # 更新&#xD;&#xA;sudo apt install wget tar make gcc build-essential libpcre3-dev zlib1g-dev libssl-dev&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;下载源码&#34;&gt;&lt;strong&gt;下载源码&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;通过编译安装Nginx的好处是可以添加一些模块，定制内容。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;在&lt;a href=&#34;https://nginx.org/en/download.html&#34;&gt;Nginx&lt;/a&gt;官网下载安装包，建议下载稳定版本(Stable version)，下载完成后，通过FTP将安装包上传到服务器&#xA;&lt;img data-src=&#34;https://aiolearn.goosegrin.site/imgs/How-to-use-source-code-to-compile-and-install-NGINX/nginx-download-page.webp&#34; alt=&#34;nginx-downlaod-page&#34; class=&#34;lazyload&#34; /&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>什么是Robots.txt</title>
-      <link>http://localhost:1313/website-building/what-is-robot.txt-file/</link>
+      <link>https://aiolearn.goosegrin.site/website-building/what-is-robot.txt-file/</link>
       <pubDate>Sat, 26 Apr 2025 22:58:07 +0800</pubDate>
-      <guid>http://localhost:1313/website-building/what-is-robot.txt-file/</guid>
+      <guid>https://aiolearn.goosegrin.site/website-building/what-is-robot.txt-file/</guid>
       <description>&lt;h2 id=&#34;什么是robots&#34;&gt;&lt;strong&gt;什么是Robots?&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;robots的内容主要是给爬虫程序看，比如&lt;code&gt;Google的爬虫Googlebot&lt;/code&gt;，&lt;code&gt;Bing的爬虫Bingbot&lt;/code&gt;，同时告诉爬虫程序哪些可以读取，哪些不能读取，robots有一些固定的语法规则，爬虫程序按照这些规则读取你网站的内容。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：robots不能防止恶意的爬虫重新获取网站内容，它就只相当于一个君子协定，&lt;code&gt;敏感内容应使用密码保护&lt;/code&gt;或 &lt;code&gt;noindex&lt;/code&gt; 标签。&lt;/p&gt;&#xA;&lt;h2 id=&#34;robot所在位置&#34;&gt;&lt;strong&gt;robot所在位置&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;robots.txt文件一般放在网站的根目录下，可以通过&lt;code&gt;https://[你的域名]/robots.txt&lt;/code&gt;打开，如果你的网站没有&lt;code&gt;robots.txt&lt;/code&gt;文件，那么对于爬虫来说网站的所有内容都是可以查看的。&lt;/p&gt;&#xA;&lt;h2 id=&#34;robot内容结构&#34;&gt;&lt;strong&gt;Robot内容结构&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;robots.txt 由 ​​用户代理（User-agent）​​ 和 ​​指令（Disallow/Allow/Sitemap 等）​​ 组成，格式如下：&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;User-agent: [爬虫名称]&#xD;&#xA;Disallow: [禁止访问的路径]&#xD;&#xA;Allow: [允许访问的路径]&#xD;&#xA;Sitemap: [站点地图URL]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;user-agent-必选&#34;&gt;&lt;strong&gt;User-agent (必选)&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;指定哪些爬虫程序可以访问网站内容&lt;/p&gt;</description>
     </item>
     <item>
       <title>SEO必备：如何将网站添加到Google搜索控制台</title>
-      <link>http://localhost:1313/website-building/submit-to-google-search-console/</link>
+      <link>https://aiolearn.goosegrin.site/website-building/submit-to-google-search-console/</link>
       <pubDate>Wed, 16 Apr 2025 11:49:04 +0800</pubDate>
-      <guid>http://localhost:1313/website-building/submit-to-google-search-console/</guid>
-      <description>&lt;h2 id=&#34;必备条件&#34;&gt;&lt;strong&gt;必备条件&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;一个Google账号&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;所有权的域名&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;魔法&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;将网站添加到Goolge站长工具(Google Search Console) 是每个SEO人员必须做的一步，它能让我们看到网站的曝光、点击、点击率、收录和排名，参考这些数据能让我们快速定位网站的问题，比如：收录问题、网页加载问题等，总之，你可以不用到Google Analytics，但是你必须要用到Google Search Console。下面我将介绍如何将网站添加到Google Search Console中。&lt;/p&gt;&#xA;&lt;h2 id=&#34;登录后台&#34;&gt;登录后台&lt;/h2&gt;&#xA;&lt;p&gt;访问 &lt;a href=&#34;https://search.google.com&#34;&gt;&lt;strong&gt;Google Search Console&lt;/strong&gt;&lt;/a&gt;，然后登录你的Google账号。&lt;/p&gt;&#xA;&lt;h2 id=&#34;添加网站&#34;&gt;添加网站&lt;/h2&gt;&#xA;&lt;p&gt;点击&lt;strong&gt;左上角&lt;/strong&gt;的按钮，下拉点击&lt;strong&gt;添加资源&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img data-src=&#34;http://localhost:1313/imgs/submit-to-google-search-console/image.webp&#34; alt=&#34;image&#34; class=&#34;lazyload&#34; /&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
+      <guid>https://aiolearn.goosegrin.site/website-building/submit-to-google-search-console/</guid>
+      <description>&lt;h2 id=&#34;必备条件&#34;&gt;&lt;strong&gt;必备条件&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;一个Google账号&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;所有权的域名&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;魔法&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;将网站添加到Goolge站长工具(Google Search Console) 是每个SEO人员必须做的一步，它能让我们看到网站的曝光、点击、点击率、收录和排名，参考这些数据能让我们快速定位网站的问题，比如：收录问题、网页加载问题等，总之，你可以不用到Google Analytics，但是你必须要用到Google Search Console。下面我将介绍如何将网站添加到Google Search Console中。&lt;/p&gt;&#xA;&lt;h2 id=&#34;登录后台&#34;&gt;登录后台&lt;/h2&gt;&#xA;&lt;p&gt;访问 &lt;a href=&#34;https://search.google.com&#34;&gt;&lt;strong&gt;Google Search Console&lt;/strong&gt;&lt;/a&gt;，然后登录你的Google账号。&lt;/p&gt;&#xA;&lt;h2 id=&#34;添加网站&#34;&gt;添加网站&lt;/h2&gt;&#xA;&lt;p&gt;点击&lt;strong&gt;左上角&lt;/strong&gt;的按钮，下拉点击&lt;strong&gt;添加资源&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img data-src=&#34;https://aiolearn.goosegrin.site/imgs/submit-to-google-search-console/image.webp&#34; alt=&#34;image&#34; class=&#34;lazyload&#34; /&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>使用 GoAccess 分析网站访问日志，快速获取流量洞察</title>
-      <link>http://localhost:1313/website-building/goaccess-web-traffic/</link>
+      <link>https://aiolearn.goosegrin.site/website-building/goaccess-web-traffic/</link>
       <pubDate>Tue, 15 Apr 2025 17:45:51 +0800</pubDate>
-      <guid>http://localhost:1313/website-building/goaccess-web-traffic/</guid>
+      <guid>https://aiolearn.goosegrin.site/website-building/goaccess-web-traffic/</guid>
       <description>&lt;p&gt;GoAccess 是一个开源的、基于终端界面的实时 Web 日志分析工具。它支持从多种格式的访问日志中快速提取关键数据，如访问量、访客 IP、请求路径、用户代理、状态码等，并通过直观的终端界面或 HTML 报表展示这些信息&lt;/p&gt;&#xA;&lt;h2 id=&#34;两种安装方式&#34;&gt;两种安装方式&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-通过包管理器安装简单但可能不是最新版&#34;&gt;1. 通过包管理器安装（&lt;code&gt;简单但可能不是最新版&lt;/code&gt;）&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：简单快捷&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：版本可能较旧，缺少最新功能支持&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#75715e&#34;&gt;#更新系统&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install goaccess &lt;span style=&#34;color:#75715e&#34;&gt;#安装goaccess&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-通过源码编译安装推荐&#34;&gt;2. 通过源码编译安装（&lt;code&gt;推荐&lt;/code&gt;）&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;注意事项&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
   </channel>

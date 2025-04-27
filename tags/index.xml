@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 鹅鹅鹅</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://aiolearn.goosegrin.site/tags/</link>
     <description>Recent content in Tags on 鹅鹅鹅</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 27 Apr 2025 12:33:53 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aiolearn.goosegrin.site/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nginx</title>
-      <link>http://localhost:1313/tags/nginx/</link>
+      <link>https://aiolearn.goosegrin.site/tags/nginx/</link>
       <pubDate>Sun, 27 Apr 2025 12:33:53 +0800</pubDate>
-      <guid>http://localhost:1313/tags/nginx/</guid>
+      <guid>https://aiolearn.goosegrin.site/tags/nginx/</guid>
       <description></description>
     </item>
     <item>
       <title>Robots</title>
-      <link>http://localhost:1313/tags/robots/</link>
+      <link>https://aiolearn.goosegrin.site/tags/robots/</link>
       <pubDate>Sat, 26 Apr 2025 22:58:07 +0800</pubDate>
-      <guid>http://localhost:1313/tags/robots/</guid>
+      <guid>https://aiolearn.goosegrin.site/tags/robots/</guid>
       <description></description>
     </item>
     <item>
       <title>穷鬼专区</title>
-      <link>http://localhost:1313/tags/%E7%A9%B7%E9%AC%BC%E4%B8%93%E5%8C%BA/</link>
+      <link>https://aiolearn.goosegrin.site/tags/%E7%A9%B7%E9%AC%BC%E4%B8%93%E5%8C%BA/</link>
       <pubDate>Sat, 26 Apr 2025 16:09:48 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E7%A9%B7%E9%AC%BC%E4%B8%93%E5%8C%BA/</guid>
+      <guid>https://aiolearn.goosegrin.site/tags/%E7%A9%B7%E9%AC%BC%E4%B8%93%E5%8C%BA/</guid>
       <description></description>
     </item>
     <item>
       <title>图片压缩</title>
-      <link>http://localhost:1313/tags/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9/</link>
+      <link>https://aiolearn.goosegrin.site/tags/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9/</link>
       <pubDate>Fri, 18 Apr 2025 19:44:25 +0800</pubDate>
-      <guid>http://localhost:1313/tags/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9/</guid>
+      <guid>https://aiolearn.goosegrin.site/tags/%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9/</guid>
       <description></description>
     </item>
     <item>
       <title>Google Search Console</title>
-      <link>http://localhost:1313/tags/google-search-console/</link>
+      <link>https://aiolearn.goosegrin.site/tags/google-search-console/</link>
       <pubDate>Wed, 16 Apr 2025 11:49:04 +0800</pubDate>
-      <guid>http://localhost:1313/tags/google-search-console/</guid>
+      <guid>https://aiolearn.goosegrin.site/tags/google-search-console/</guid>
       <description></description>
     </item>
     <item>
       <title>SEO必备</title>
-      <link>http://localhost:1313/tags/seo%E5%BF%85%E5%A4%87/</link>
+      <link>https://aiolearn.goosegrin.site/tags/seo%E5%BF%85%E5%A4%87/</link>
       <pubDate>Wed, 16 Apr 2025 11:49:04 +0800</pubDate>
-      <guid>http://localhost:1313/tags/seo%E5%BF%85%E5%A4%87/</guid>
+      <guid>https://aiolearn.goosegrin.site/tags/seo%E5%BF%85%E5%A4%87/</guid>
       <description></description>
     </item>
     <item>
       <title>Goaccess</title>
-      <link>http://localhost:1313/tags/goaccess/</link>
+      <link>https://aiolearn.goosegrin.site/tags/goaccess/</link>
       <pubDate>Tue, 15 Apr 2025 17:45:51 +0800</pubDate>
-      <guid>http://localhost:1313/tags/goaccess/</guid>
+      <guid>https://aiolearn.goosegrin.site/tags/goaccess/</guid>
       <description></description>
     </item>
   </channel>

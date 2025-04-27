@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goaccess on 鹅鹅鹅</title>
-    <link>http://localhost:1313/tags/goaccess/</link>
+    <link>https://aiolearn.goosegrin.site/tags/goaccess/</link>
     <description>Recent content in Goaccess on 鹅鹅鹅</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 15 Apr 2025 17:45:51 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/goaccess/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aiolearn.goosegrin.site/tags/goaccess/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用 GoAccess 分析网站访问日志，快速获取流量洞察</title>
-      <link>http://localhost:1313/website-building/goaccess-web-traffic/</link>
+      <link>https://aiolearn.goosegrin.site/website-building/goaccess-web-traffic/</link>
       <pubDate>Tue, 15 Apr 2025 17:45:51 +0800</pubDate>
-      <guid>http://localhost:1313/website-building/goaccess-web-traffic/</guid>
+      <guid>https://aiolearn.goosegrin.site/website-building/goaccess-web-traffic/</guid>
       <description>&lt;p&gt;GoAccess 是一个开源的、基于终端界面的实时 Web 日志分析工具。它支持从多种格式的访问日志中快速提取关键数据，如访问量、访客 IP、请求路径、用户代理、状态码等，并通过直观的终端界面或 HTML 报表展示这些信息&lt;/p&gt;&#xA;&lt;h2 id=&#34;两种安装方式&#34;&gt;两种安装方式&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-通过包管理器安装简单但可能不是最新版&#34;&gt;1. 通过包管理器安装（&lt;code&gt;简单但可能不是最新版&lt;/code&gt;）&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;优点&lt;/strong&gt;：简单快捷&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;缺点&lt;/strong&gt;：版本可能较旧，缺少最新功能支持&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#75715e&#34;&gt;#更新系统&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install goaccess &lt;span style=&#34;color:#75715e&#34;&gt;#安装goaccess&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2-通过源码编译安装推荐&#34;&gt;2. 通过源码编译安装（&lt;code&gt;推荐&lt;/code&gt;）&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;注意事项&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
   </channel>

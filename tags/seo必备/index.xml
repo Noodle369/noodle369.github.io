@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SEO必备 on 鹅鹅鹅</title>
-    <link>http://localhost:1313/tags/seo%E5%BF%85%E5%A4%87/</link>
+    <link>https://aiolearn.goosegrin.site/tags/seo%E5%BF%85%E5%A4%87/</link>
     <description>Recent content in SEO必备 on 鹅鹅鹅</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 16 Apr 2025 11:49:04 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/seo%E5%BF%85%E5%A4%87/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aiolearn.goosegrin.site/tags/seo%E5%BF%85%E5%A4%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SEO必备：如何将网站添加到Google搜索控制台</title>
-      <link>http://localhost:1313/website-building/submit-to-google-search-console/</link>
+      <link>https://aiolearn.goosegrin.site/website-building/submit-to-google-search-console/</link>
       <pubDate>Wed, 16 Apr 2025 11:49:04 +0800</pubDate>
-      <guid>http://localhost:1313/website-building/submit-to-google-search-console/</guid>
-      <description>&lt;h2 id=&#34;必备条件&#34;&gt;&lt;strong&gt;必备条件&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;一个Google账号&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;所有权的域名&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;魔法&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;将网站添加到Goolge站长工具(Google Search Console) 是每个SEO人员必须做的一步，它能让我们看到网站的曝光、点击、点击率、收录和排名，参考这些数据能让我们快速定位网站的问题，比如：收录问题、网页加载问题等，总之，你可以不用到Google Analytics，但是你必须要用到Google Search Console。下面我将介绍如何将网站添加到Google Search Console中。&lt;/p&gt;&#xA;&lt;h2 id=&#34;登录后台&#34;&gt;登录后台&lt;/h2&gt;&#xA;&lt;p&gt;访问 &lt;a href=&#34;https://search.google.com&#34;&gt;&lt;strong&gt;Google Search Console&lt;/strong&gt;&lt;/a&gt;，然后登录你的Google账号。&lt;/p&gt;&#xA;&lt;h2 id=&#34;添加网站&#34;&gt;添加网站&lt;/h2&gt;&#xA;&lt;p&gt;点击&lt;strong&gt;左上角&lt;/strong&gt;的按钮，下拉点击&lt;strong&gt;添加资源&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img data-src=&#34;http://localhost:1313/imgs/submit-to-google-search-console/image.webp&#34; alt=&#34;image&#34; class=&#34;lazyload&#34; /&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
+      <guid>https://aiolearn.goosegrin.site/website-building/submit-to-google-search-console/</guid>
+      <description>&lt;h2 id=&#34;必备条件&#34;&gt;&lt;strong&gt;必备条件&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;一个Google账号&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;所有权的域名&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;魔法&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;将网站添加到Goolge站长工具(Google Search Console) 是每个SEO人员必须做的一步，它能让我们看到网站的曝光、点击、点击率、收录和排名，参考这些数据能让我们快速定位网站的问题，比如：收录问题、网页加载问题等，总之，你可以不用到Google Analytics，但是你必须要用到Google Search Console。下面我将介绍如何将网站添加到Google Search Console中。&lt;/p&gt;&#xA;&lt;h2 id=&#34;登录后台&#34;&gt;登录后台&lt;/h2&gt;&#xA;&lt;p&gt;访问 &lt;a href=&#34;https://search.google.com&#34;&gt;&lt;strong&gt;Google Search Console&lt;/strong&gt;&lt;/a&gt;，然后登录你的Google账号。&lt;/p&gt;&#xA;&lt;h2 id=&#34;添加网站&#34;&gt;添加网站&lt;/h2&gt;&#xA;&lt;p&gt;点击&lt;strong&gt;左上角&lt;/strong&gt;的按钮，下拉点击&lt;strong&gt;添加资源&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img data-src=&#34;https://aiolearn.goosegrin.site/imgs/submit-to-google-search-console/image.webp&#34; alt=&#34;image&#34; class=&#34;lazyload&#34; /&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
